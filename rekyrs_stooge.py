@@ -19,8 +19,13 @@ def stooge(data):
     return stooge_rec(data, 0, len(data) - 1)
 
 
-arr = []
-for a in range(random.randint(3, 9)):
-    arr.append((random.randint(0, 100)) + (random.randint(0, 100)) / 100)
-print(arr)
+
+arr =[]
+vibor = input("Случайные числа?")
+if vibor.capitalize() == "Да":
+    for a in range(9):
+        arr.append((random.randint(0, 100)) + (random.randint(0, 100)) / 100)
+else:
+    for a in range(9):
+        arr.append (int(input("Введите число: ")))
 print(stooge_rec(arr))
