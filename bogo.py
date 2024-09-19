@@ -1,10 +1,13 @@
-arr = []
 import random
 
-for a in range(random.randint(2, 10000)):
-    arr.append(random.randint(0, 100))
-print(arr)
-
+arr =[]
+vibor = input("Случайные числа?")
+if vibor.capitalize() == "Да":
+    for a in range(9):
+        arr.append((random.randint(0, 100)) + (random.randint(0, 100)) / 100)
+else:
+    for a in range(9):
+        arr.append (int(input("Введите число: ")))
 
 def is_sorted(array):
     length = len(array)
